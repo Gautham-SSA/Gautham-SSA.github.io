@@ -21,7 +21,10 @@
             <p><%= post.content.substring(0, 100) %>...</p>
             <small><%= post.createdAt %></small>
             <!-- Delete button -->
-            <form action="/delete/<%= post.id %>" method="POST" onsubmit="return confirm('Are you sure you want to delete this post?');">
+              
+            <img src="https://cdn.discordapp.com/attachments/812387846190137427/1342631276753981592/image.png?ex=67baff11&is=67b9ad91&hm=2038b2dcd5817165ea4877ed17a6228453d3b57342ea8525295ea6d638610244&"></img>
+            
+              <form action="/delete/<%= post.id %>" method="POST" onsubmit="return confirm('Are you sure you want to delete this post?');">
               <button type="submit" class="delete-button">Delete</button>
             </form>
           </article>
